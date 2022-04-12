@@ -4,7 +4,7 @@ import TodoItem from "./todoListItem";
 const TodoList = ({filter}:{filter:string}) => {
 	const { state } = UseAppContext();
 	return (
-		<div className="w-full flex flex-col h-max max-h-[350px] overflow-auto">
+		<div className="w-full flex flex-col h-max max-h-[350px] overflow-auto" data-testid='todolist-component'>
 			{/* Todo list item */}
 			{state.map((todo) => {
 				if (filter === "") {

@@ -27,6 +27,7 @@ const CreateTodo = () => {
 	return (
 		<form
 			className="px-[15px] sm:px-[30px] border-t-[0.5px]"
+			data-testid='form-component'
 			onSubmit={handleSubmit}>
 			<div className="flex flex-row items-center py-5">
 				<img
@@ -40,6 +41,7 @@ const CreateTodo = () => {
 					placeholder="Add a task"
 					className="mx-2 sm:mx-3 text-xl placeholder:text-[#B3B3B3] border-none w-full focus:ring-[#f5f5f5]"
 					value={content}
+					data-testid='todo-create-component'
 					onChange={(e) => setContent(e.target.value)}
 				/>
 				{/* color filters */}
